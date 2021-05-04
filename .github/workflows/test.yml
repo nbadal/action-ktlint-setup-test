@@ -6,7 +6,7 @@ jobs:
     name: Test ktlint install
     steps:
     - uses: actions/checkout@v2
-    - id: foo
+    - name: "Install ktlint"
       uses: nbadal/action-ktlint-setup@v1
       with:
         ktlint_version: 'latest'
